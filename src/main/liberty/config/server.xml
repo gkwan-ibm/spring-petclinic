@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<server description="new server">
+
+    <!-- Enable features -->
+    <!--The Liberty Maven Plugin has generated Liberty features necessary for your application in configDropins/overrides/generated-features.xml-->
+    <featureManager>
+        <platform>jakartaee-10.0</platform>
+        <feature>servlet</feature>
+    </featureManager>
+
+    <!-- To access this server from a remote client add a host attribute to the following element, e.g. host="*" -->
+    <httpEndpoint host="*" httpPort="9080" httpsPort="9443" id="defaultHttpEndpoint"/>
+    <applicationManager autoExpand="false"/>
+    <application id="spring-petclinic" location="spring-petclinic-3.5.0-SNAPSHOT.war" name="spring-petclinic">
+    </application>
+
+</server>
