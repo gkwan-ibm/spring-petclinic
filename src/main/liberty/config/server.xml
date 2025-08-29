@@ -10,7 +10,7 @@
 
     <!-- To access this server from a remote client add a host attribute to the following element, e.g. host="*" -->
     <httpEndpoint host="*" httpPort="9080" httpsPort="9443" id="defaultHttpEndpoint"/>
-    <application id="spring-petclinic" location="spring-petclinic-3.5.0-SNAPSHOT.war" name="spring-petclinic">
-    </application>
+    <applicationManager autoExpand="true"/>
+    <application id="spring-petclinic" location="spring-petclinic-3.5.0-SNAPSHOT.war" name="spring-petclinic"/>
 
 </server>
